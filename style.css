@@ -3,8 +3,8 @@ body {
   padding: 0;
   min-height: 100vh;
   font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
-  background: peachpuff;
-  color: #374151;
+  background: #000000;
+  color: #ffffff;
   display: flex;
   flex-direction: column;
 }
@@ -21,13 +21,13 @@ body {
 }
 
 .chat-header {
-  background: rgba(255, 218, 185, 0.9);
+  background: rgba(20, 20, 20, 0.95);
   padding: 1rem 1.5rem;
   font-size: 1.2rem;
   font-weight: 600;
-  border-bottom: 1px solid rgba(139, 69, 19, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   text-align: center;
-  color: #8b4513;
+  color: #ffffff;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -58,14 +58,14 @@ body {
 }
 
 .message.user {
-  background: rgba(255, 140, 66, 0.1);
-  color: #8b4513;
+  background: rgba(255, 255, 255, 0.05);
+  color: #ffffff;
   backdrop-filter: blur(5px);
 }
 
 .message.user .avatar {
-  background: #10a37f;
-  color: white;
+  background: #00ff88;
+  color: #000000;
   border-radius: 50%;
   width: 30px;
   height: 30px;
@@ -78,13 +78,13 @@ body {
 }
 
 .message.bot {
-  background: rgba(255, 218, 185, 0.2);
-  color: #8b4513;
+  background: rgba(255, 255, 255, 0.08);
+  color: #ffffff;
   backdrop-filter: blur(5px);
 }
 
 .message.bot .avatar {
-  background: #ff6b35;
+  background: #ff0080;
   color: white;
   border-radius: 50%;
   width: 30px;
@@ -103,20 +103,20 @@ body {
 }
 
 .message-content a {
-  color: #ff6b35;
+  color: #00ff88;
   text-decoration: none;
   font-weight: 600;
   transition: color 0.3s ease;
 }
 
 .message-content a:hover {
-  color: #ff8c42;
+  color: #00cc6a;
   text-decoration: underline;
 }
 
 .json-response {
-  background: rgba(255, 218, 185, 0.3);
-  border: 1px solid rgba(255, 140, 66, 0.3);
+  background: rgba(40, 40, 40, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 0.5rem;
   padding: 1rem;
   margin: 0.5rem 0;
@@ -125,7 +125,7 @@ body {
   line-height: 1.4;
   overflow-x: auto;
   white-space: pre-wrap;
-  color: #8b4513;
+  color: #00ff88;
   backdrop-filter: blur(5px);
 }
 
@@ -139,64 +139,64 @@ body {
 .chat-input-area {
   display: flex;
   padding: 1rem 0.5rem;
-  background: rgba(255, 218, 185, 0.9);
-  border-top: 1px solid rgba(139, 69, 19, 0.2);
+  background: rgba(20, 20, 20, 0.95);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
   position: relative;
   backdrop-filter: blur(10px);
 }
 
 #chat-input {
   flex: 1;
-  padding: 0.75rem 1rem;
+  padding: 0.5rem 0.75rem;
   border-radius: 0.5rem;
-  border: 1px solid rgba(255, 140, 66, 0.4);
-  background: rgba(255, 218, 185, 0.6);
-  color: #8b4513;
-  font-size: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(40, 40, 40, 0.8);
+  color: #ffffff;
+  font-size: 0.9rem;
   outline: none;
   margin-right: 0.75rem;
   transition: all 0.3s ease;
   resize: none;
-  min-height: 20px;
-  max-height: 120px;
-  line-height: 1.5;
+  min-height: 16px;
+  max-height: 80px;
+  line-height: 1.4;
   backdrop-filter: blur(5px);
-  box-shadow: 0 2px 8px rgba(255, 140, 66, 0.1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
 }
 
 #chat-input::placeholder {
-  color: rgba(139, 69, 19, 0.6);
+  color: rgba(255, 255, 255, 0.5);
 }
 
 #chat-input:focus {
-  border-color: #ff6b35;
-  background: rgba(255, 218, 185, 0.8);
-  box-shadow: 0 0 0 3px rgba(255, 107, 53, 0.2), 0 4px 12px rgba(255, 140, 66, 0.2);
+  border-color: #00ff88;
+  background: rgba(60, 60, 60, 0.9);
+  box-shadow: 0 0 0 3px rgba(0, 255, 136, 0.2), 0 4px 12px rgba(0, 0, 0, 0.4);
   transform: translateY(-1px);
 }
 
 button[type="submit"] {
-  background: linear-gradient(135deg, #ff6b35, #ff8c42);
-  color: #ffffff;
+  background: linear-gradient(135deg, #00ff88, #00cc6a);
+  color: #000000;
   border: none;
   border-radius: 0.5rem;
-  padding: 0.75rem 1rem;
-  font-size: 1rem;
+  padding: 0.5rem 0.75rem;
+  font-size: 0.9rem;
   font-weight: 600;
   cursor: pointer;
   transition: all 0.3s ease;
   display: flex;
   align-items: center;
   justify-content: center;
-  min-width: 40px;
-  box-shadow: 0 2px 8px rgba(255, 107, 53, 0.3);
+  min-width: 36px;
+  box-shadow: 0 2px 8px rgba(0, 255, 136, 0.3);
   backdrop-filter: blur(5px);
 }
 
 button[type="submit"]:hover {
-  background: linear-gradient(135deg, #ff8c42, #ff6b35);
+  background: linear-gradient(135deg, #00cc6a, #00ff88);
   transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(255, 107, 53, 0.4);
+  box-shadow: 0 4px 12px rgba(0, 255, 136, 0.4);
 }
 
 button[type="submit"]:disabled {
@@ -252,13 +252,13 @@ button[type="submit"]:disabled {
   position: absolute;
   width: 100px;
   height: 100px;
-  background: linear-gradient(45deg, #ff6b35, #ff8c42);
-  border: 2px solid #ffdab9;
+  background: linear-gradient(45deg, #00ff88, #00cc6a);
+  border: 2px solid #ffffff;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 2rem;
-  color: white;
+  color: #000000;
   font-weight: bold;
 }
 
@@ -293,6 +293,8 @@ button[type="submit"]:disabled {
   width: 40px;
   height: 40px;
   font-size: 0.6rem;
+  background: linear-gradient(45deg, #808080, #a0a0a0);
+  transition: background 0.3s ease;
 }
 
 .floating-cube.small .face.front { transform: translateZ(20px); }
@@ -314,14 +316,15 @@ button[type="submit"]:disabled {
   position: absolute;
   width: 60px;
   height: 60px;
-  background: linear-gradient(45deg, #ff8c42, #ff6b35);
-  border: 1px solid #ffdab9;
+  background: linear-gradient(45deg, #808080, #a0a0a0);
+  border: 1px solid #ffffff;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 0.8rem;
-  color: white;
+  color: #ffffff;
   font-weight: bold;
+  transition: background 0.3s ease;
 }
 
 .floating-cube .face.front { transform: translateZ(30px); }
@@ -336,195 +339,20 @@ button[type="submit"]:disabled {
   100% { transform: rotateX(360deg) rotateY(360deg); }
 }
 
-/* Individual cube animations */
-.cube-1 {
-  top: 10%;
-  left: 10%;
-  animation: float1 20s ease-in-out infinite;
-}
-
-.cube-2 {
-  top: 20%;
-  left: 80%;
-  animation: float2 25s ease-in-out infinite;
-}
-
-.cube-3 {
-  top: 60%;
-  left: 5%;
-  animation: float3 18s ease-in-out infinite;
-}
-
-.cube-4 {
-  top: 70%;
-  left: 85%;
-  animation: float4 22s ease-in-out infinite;
-}
-
-.cube-5 {
-  top: 40%;
-  left: 70%;
-  animation: float5 30s ease-in-out infinite;
-}
-
-.cube-6 {
-  top: 80%;
-  left: 30%;
-  animation: float6 16s ease-in-out infinite;
-}
-
-.cube-7 {
-  top: 15%;
-  left: 50%;
-  animation: float7 28s ease-in-out infinite;
-}
-
-.cube-8 {
-  top: 45%;
-  left: 15%;
-  animation: float8 24s ease-in-out infinite;
-}
-
-.cube-9 {
-  top: 75%;
-  left: 60%;
-  animation: float9 19s ease-in-out infinite;
-}
-
-.cube-10 {
-  top: 25%;
-  left: 25%;
-  animation: float10 26s ease-in-out infinite;
-}
-
-.cube-11 {
-  top: 55%;
-  left: 85%;
-  animation: float11 21s ease-in-out infinite;
-}
-
-.cube-12 {
-  top: 85%;
-  left: 75%;
-  animation: float12 17s ease-in-out infinite;
-}
-
-.cube-13 {
-  top: 35%;
-  left: 40%;
-  animation: float13 23s ease-in-out infinite;
-}
-
-.cube-14 {
-  top: 65%;
-  left: 25%;
-  animation: float14 27s ease-in-out infinite;
-}
-
-.cube-15 {
-  top: 5%;
-  left: 70%;
-  animation: float15 29s ease-in-out infinite;
+/* Individual cube animations - now handled by JavaScript physics */
+.cube-1, .cube-2, .cube-3, .cube-4, .cube-5, .cube-6, .cube-7, .cube-8, .cube-9, .cube-10, .cube-11, .cube-12, .cube-13, .cube-14, .cube-15 {
+  position: fixed;
+  z-index: -1;
+  opacity: 0.25;
 }
 
 
 
-@keyframes float1 {
-  0%, 100% { transform: translate(0, 0) rotate(0deg); }
-  25% { transform: translate(50px, -30px) rotate(90deg); }
-  50% { transform: translate(100px, 0) rotate(180deg); }
-  75% { transform: translate(50px, 30px) rotate(270deg); }
-}
 
-@keyframes float2 {
-  0%, 100% { transform: translate(0, 0) rotate(0deg); }
-  33% { transform: translate(-40px, -50px) rotate(120deg); }
-  66% { transform: translate(-80px, 0) rotate(240deg); }
-}
 
-@keyframes float3 {
-  0%, 100% { transform: translate(0, 0) rotate(0deg); }
-  50% { transform: translate(60px, -40px) rotate(180deg); }
-}
 
-@keyframes float4 {
-  0%, 100% { transform: translate(0, 0) rotate(0deg); }
-  25% { transform: translate(-30px, -20px) rotate(90deg); }
-  50% { transform: translate(-60px, 0) rotate(180deg); }
-  75% { transform: translate(-30px, 20px) rotate(270deg); }
-}
 
-@keyframes float5 {
-  0%, 100% { transform: translate(0, 0) rotate(0deg); }
-  20% { transform: translate(40px, -30px) rotate(72deg); }
-  40% { transform: translate(80px, 0) rotate(144deg); }
-  60% { transform: translate(40px, 30px) rotate(216deg); }
-  80% { transform: translate(0, 0) rotate(288deg); }
-}
-
-@keyframes float6 {
-  0%, 100% { transform: translate(0, 0) rotate(0deg); }
-  50% { transform: translate(-50px, -30px) rotate(180deg); }
-}
-
-@keyframes float7 {
-  0%, 100% { transform: translate(0, 0) rotate(0deg); }
-  25% { transform: translate(30px, -40px) rotate(90deg); }
-  50% { transform: translate(60px, 0) rotate(180deg); }
-  75% { transform: translate(30px, 40px) rotate(270deg); }
-}
-
-@keyframes float8 {
-  0%, 100% { transform: translate(0, 0) rotate(0deg); }
-  33% { transform: translate(50px, -30px) rotate(120deg); }
-  66% { transform: translate(100px, 0) rotate(240deg); }
-}
-
-@keyframes float9 {
-  0%, 100% { transform: translate(0, 0) rotate(0deg); }
-  50% { transform: translate(-40px, -50px) rotate(180deg); }
-}
-
-@keyframes float10 {
-  0%, 100% { transform: translate(0, 0) rotate(0deg); }
-  20% { transform: translate(-30px, -20px) rotate(72deg); }
-  40% { transform: translate(-60px, 0) rotate(144deg); }
-  60% { transform: translate(-30px, 20px) rotate(216deg); }
-  80% { transform: translate(0, 0) rotate(288deg); }
-}
-
-@keyframes float11 {
-  0%, 100% { transform: translate(0, 0) rotate(0deg); }
-  25% { transform: translate(-20px, -35px) rotate(90deg); }
-  50% { transform: translate(-40px, 0) rotate(180deg); }
-  75% { transform: translate(-20px, 35px) rotate(270deg); }
-}
-
-@keyframes float12 {
-  0%, 100% { transform: translate(0, 0) rotate(0deg); }
-  50% { transform: translate(35px, -25px) rotate(180deg); }
-}
-
-@keyframes float13 {
-  0%, 100% { transform: translate(0, 0) rotate(0deg); }
-  33% { transform: translate(25px, -45px) rotate(120deg); }
-  66% { transform: translate(50px, 0) rotate(240deg); }
-}
-
-@keyframes float14 {
-  0%, 100% { transform: translate(0, 0) rotate(0deg); }
-  25% { transform: translate(-45px, -15px) rotate(90deg); }
-  50% { transform: translate(-90px, 0) rotate(180deg); }
-  75% { transform: translate(-45px, 15px) rotate(270deg); }
-}
-
-@keyframes float15 {
-  0%, 100% { transform: translate(0, 0) rotate(0deg); }
-  20% { transform: translate(20px, -40px) rotate(72deg); }
-  40% { transform: translate(40px, 0) rotate(144deg); }
-  60% { transform: translate(20px, 40px) rotate(216deg); }
-  80% { transform: translate(0, 0) rotate(288deg); }
-}
+/* Keyframe animations removed - now using JavaScript physics */
 
 
 
